@@ -21,11 +21,11 @@ GameObject:
   - component: {fileID: 4920197434519988}
   - component: {fileID: 33249133448346868}
   - component: {fileID: 23204375684102754}
-  - component: {fileID: 65401654894564312}
-  - component: {fileID: 114611772944183538}
+  - component: {fileID: 114151324319900740}
+  - component: {fileID: 114071722544005898}
   m_Layer: 0
   m_Name: Wall
-  m_TagString: Untagged
+  m_TagString: Powerup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -85,19 +85,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1002954541978992}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &65401654894564312
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1002954541978992}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114611772944183538
+--- !u!114 &114071722544005898
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -105,6 +93,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 1002954541978992}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5152bb1451c14644896bb772b94b7179, type: 3}
+  m_Script: {fileID: 11500000, guid: 79be63e0d8067dc47814e3b950501eef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  type: 0
+--- !u!114 &114151324319900740
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1002954541978992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96abb8ea54b5977489398475cf65ceed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isDoneChecking: 0
