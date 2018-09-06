@@ -35,4 +35,27 @@ public class PlayerMovement : MonoBehaviour {
 
 
 	}
+
+    void OverlappingAABB(AABB other)
+    {
+
+        if (other.tag == "Powerup")
+        {
+            // it must be a powerup...
+            Powerup powerup = other.GetComponent<Powerup>();
+            switch (powerup.type)
+            {
+                case Powerup.Type.None:
+                    break;
+                case Powerup.Type.Slowmo:
+                    break;
+                case Powerup.Type.Health:
+                    break;
+                case Powerup.Type.JetpackBoost:
+                    break;
+            }
+            Destroy(other.gameObject);
+        }
+    }
+
 }
